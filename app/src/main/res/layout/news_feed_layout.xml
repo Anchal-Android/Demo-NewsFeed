@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.NewFeedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/imageView_height"
+        android:layout_margin="@dimen/margin_5x"
+        android:background="@drawable/searchview_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       >
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:hint="@string/search"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="25"
+            android:maxLines="1" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recMyApplication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5x"
+        />
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_compose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:src="@drawable/addicon"
+        android:gravity="bottom|end"
+        app:backgroundTint="@color/titleColor" />
+
+   </android.support.design.widget.CoordinatorLayout >

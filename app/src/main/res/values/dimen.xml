@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+   <dimen name="imageView_height">42dp</dimen>
+   <dimen name="margin_5x">10dp</dimen>
+    <dimen name="title_textSize">16sp</dimen>
+    <dimen name="desc_textSize">14sp</dimen>
+
+</resources>
